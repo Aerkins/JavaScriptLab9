@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>CIS 223 Chapter 9 Program</title>
+<script type="text/javascript" src="Erkins_Lab9.js"></script>
+<script>
+	function display()
+	{
+		for(var i=0; i<names.length; i++) 
+		{
+			var temp = "cell"+i+"0";
+			.03
+			document.getElementById(temp).innerHTML = names[i];
+			temp = "cell"+i+"1";
+			document.getElementById(temp).innerHTML = published[i];
+		}
+	}
+</script>
+</head>
+<body  onload="display()">
+<h1>Program 9 - Selection Sort</h1>
+
+<table id ="workTable" border ="2">
+    <tr>
+    <td> <span id = "cell00"/> </td>
+    <td> <span id = "cell01"/> </td>
+    </tr>
+    
+    <tr>
+    <td> <span id = "cell10"/> </td>
+    <td> <span id = "cell11"/> </td>
+    </tr>
+    
+    <tr>
+    <td> <span id = "cell20"/> </td>
+    <td> <span id = "cell21"/> </td>
+    </tr>
+    
+    <tr>
+    <td> <span id = "cell30"/> </td>
+    <td> <span id = "cell31"/> </td>
+    </tr>
+    
+    <tr>
+    <td> <span id = "cell40"/> </td>
+    <td> <span id = "cell41"/> </td>
+    </tr>
+
+</table>
+<form>
+    <input type="button" value="Sort" onclick="SortIt()"/>
+</form>
+</body>
+</html>
